@@ -1,0 +1,21 @@
+[default]
+DEBUG = true
+SQLALCHEMY_DATABASE_URI = 'postgresql://iaruekluxvivvw:fc6de78932d36f9a5b445be932df26cf0161548c6199bb50d227ef89f3664b52@ec2-107-22-245-82.compute-1.amazonaws.com:5432/d619ea6dvsk702'
+SQLALCHEMY_TRACK_MODIFICATIONS = true
+EXTENSIONS = [    
+    "app.ext.db:init_app",
+    "app.views:init_app",     
+]
+#"app.ext.db:init_app", 
+#"app.ext.model:init_app", 
+#"app.ext.migrate:init_app",
+
+[development]
+DEBUG = true
+SQLALCHEMY_DATABASE_URI = 'postgresql://iaruekluxvivvw:fc6de78932d36f9a5b445be932df26cf0161548c6199bb50d227ef89f3664b52@ec2-107-22-245-82.compute-1.amazonaws.com:5432/d619ea6dvsk702'
+SQLALCHEMY_TRACK_MODIFICATIONS = true
+
+[production]
+DEBUG = false
+# SQLALCHEMY_DATABASE_URI = 'postgresql://iaruekluxvivvw:fc6de78932d36f9a5b445be932df26cf0161548c6199bb50d227ef89f3664b52@ec2-107-22-245-82.compute-1.amazonaws.com:5432/d619ea6dvsk702'
+# SQLALCHEMY_TRACK_MODIFICATIONS = true
